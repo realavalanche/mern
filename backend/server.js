@@ -16,7 +16,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build'))
 })
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
