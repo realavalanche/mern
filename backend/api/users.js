@@ -5,10 +5,7 @@ const user = require('../models/user');
 
 router.get('/', (req, res) => {
     user.find()
-        .then(users => {
-            console.log(users)
-            return res.json(users)
-        })
+        .then(users => res.json(users))
         .catch(err => console.log(err))
 })
 router.post('/', (req, res) => {
